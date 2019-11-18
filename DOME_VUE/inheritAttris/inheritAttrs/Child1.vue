@@ -12,14 +12,15 @@
 </template>
 <script>
     import Child2 from './Child2.vue';
+
     export default {
         props: ['pChild1'],//继承父组件的 pChild1 属性
-        data () {
+        data() {
             return {};
         },
         inheritAttrs: false,//子组件有没有被父组件继承的特性
-        components: { Child2 },
-        mounted () {
+        components: {Child2},
+        mounted() {
             this.$emit('test1');
         }
     };

@@ -9,15 +9,15 @@
 <script>
     export default {
         props: ['pChild2'],//继承来着父组件的属性
-        data () {
+        data() {
             return {};
         },
         inheritAttrs: false,
         methods: {
-            test(){
+            test() {
                 this.$emit('click');
             }
-            
+
         }
     };
 </script>
